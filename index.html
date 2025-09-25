@@ -37,6 +37,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            font-size: 0.9rem;
         }
         
         /* Login Screen */
@@ -52,16 +53,16 @@
             background-color: var(--bg-card);
             border-radius: 20px;
             box-shadow: 0 10px 40px var(--shadow);
-            padding: 40px;
+            padding: 30px;
             width: 100%;
-            max-width: 400px;
+            max-width: 350px;
             border: 1px solid var(--border-color);
         }
         
         .login-title {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             text-align: center;
             background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
             -webkit-background-clip: text;
@@ -72,11 +73,11 @@
             background-color: var(--bg-secondary);
             border: 1px solid var(--border-color);
             color: var(--text-primary);
-            padding: 14px 18px;
+            padding: 12px 16px;
             border-radius: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             width: 100%;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 500;
         }
         
@@ -91,11 +92,11 @@
             background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
             border: none;
             color: white;
-            padding: 14px 28px;
+            padding: 12px 24px;
             border-radius: 12px;
             font-weight: 600;
             width: 100%;
-            font-size: 16px;
+            font-size: 15px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(244, 143, 177, 0.3);
         }
@@ -116,12 +117,12 @@
         .announcement-bar {
             background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
             color: white;
-            padding: 10px 0;
+            padding: 8px 0;
             text-align: center;
             font-weight: 500;
             position: relative;
             overflow: hidden;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             box-shadow: 0 2px 10px rgba(244, 143, 177, 0.2);
         }
         
@@ -144,15 +145,15 @@
         /* Header */
         .header {
             background-color: var(--bg-card);
-            padding: 15px 0;
+            padding: 12px 0;
             border-bottom: 1px solid var(--border-color);
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
         }
         
         .header h1 {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
             background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -160,25 +161,25 @@
         
         .header p {
             color: var(--text-secondary);
-            font-size: 12px;
+            font-size: 11px;
         }
         
         /* Summary Cards */
         .summary-card {
             background: linear-gradient(135deg, var(--bg-card), #fefefe);
-            border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 15px;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 12px;
             border: 1px solid var(--border-color);
             box-shadow: 0 5px 20px var(--shadow);
         }
         
         .summary-item {
             text-align: center;
-            padding: 10px 5px;
-            border-radius: 12px;
+            padding: 8px 4px;
+            border-radius: 10px;
             background-color: var(--bg-secondary);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             transition: transform 0.3s ease;
         }
         
@@ -187,63 +188,63 @@
         }
         
         .summary-value {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 700;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
             color: var(--accent-primary);
         }
         
         .summary-label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: var(--text-secondary);
             font-weight: 500;
         }
         
         .progress-section {
-            margin-top: 15px;
+            margin-top: 12px;
         }
         
         .progress-label {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 5px;
-            font-size: 0.8rem;
+            margin-bottom: 4px;
+            font-size: 0.75rem;
             font-weight: 500;
         }
         
         .progress {
-            height: 8px;
-            border-radius: 12px;
+            height: 6px;
+            border-radius: 10px;
             background-color: var(--bg-tertiary);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             overflow: hidden;
         }
         
         .progress-bar {
-            border-radius: 12px;
+            border-radius: 10px;
             transition: width 1s ease-in-out;
         }
         
         /* Credit Card Usage Section */
         .credit-card-usage {
             background-color: var(--bg-secondary);
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 15px;
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 12px;
             border: 1px solid var(--border-color);
         }
         
         .credit-card-usage-title {
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             color: var(--text-primary);
         }
         
         .credit-card-stats {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         
         .credit-card-stat {
@@ -251,13 +252,13 @@
         }
         
         .credit-card-stat-value {
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 700;
             color: var(--accent-primary);
         }
         
         .credit-card-stat-label {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             color: var(--text-secondary);
         }
         
@@ -265,9 +266,9 @@
         .card {
             background-color: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 15px;
+            border-radius: 12px;
             box-shadow: 0 5px 20px var(--shadow);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -280,7 +281,7 @@
         .card-header {
             background-color: var(--bg-secondary);
             border-bottom: 1px solid var(--border-color);
-            padding: 12px 15px;
+            padding: 10px 12px;
             font-weight: 600;
             display: flex;
             justify-content: space-between;
@@ -289,16 +290,16 @@
         
         .card-header h5 {
             margin: 0;
-            font-size: 16px;
+            font-size: 14px;
             display: flex;
             align-items: center;
             color: var(--text-primary);
         }
         
         .card-header i {
-            margin-right: 8px;
+            margin-right: 6px;
             color: var(--accent-primary);
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
         
         .card-body {
@@ -309,22 +310,22 @@
         .table {
             margin-bottom: 0;
             color: var(--text-primary);
-            font-size: 0.8rem;
+            font-size: 0.75rem;
         }
         
         .table th {
             border-top: none;
             font-weight: 600;
             color: var(--text-secondary);
-            padding: 10px 8px;
+            padding: 8px 6px;
             background-color: var(--bg-secondary);
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
         
         .table td {
-            padding: 10px 8px;
+            padding: 8px 6px;
             vertical-align: middle;
             border-top: 1px solid var(--border-color);
         }
@@ -336,10 +337,10 @@
         /* Badges */
         .person-badge {
             display: inline-block;
-            padding: 4px 10px;
-            border-radius: 15px;
+            padding: 3px 8px;
+            border-radius: 12px;
             font-weight: 600;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         
@@ -358,13 +359,13 @@
             background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
             color: white;
             border: none;
-            border-radius: 10px;
-            padding: 6px 12px;
+            border-radius: 8px;
+            padding: 5px 10px;
             font-weight: 600;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             box-shadow: 0 3px 8px rgba(244, 143, 177, 0.3);
         }
         
@@ -374,14 +375,14 @@
             color: white;
         }
         
-        .btn-edit, .btn-delete, .btn-split, .btn-commitment {
+        .btn-edit, .btn-delete, .btn-split, .btn-commitment, .btn-paid {
             background-color: transparent;
             border: none;
-            padding: 4px 8px;
-            border-radius: 8px;
-            margin-right: 3px;
+            padding: 3px 6px;
+            border-radius: 6px;
+            margin-right: 2px;
             transition: all 0.2s ease;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
         
         .btn-edit {
@@ -416,12 +417,20 @@
             background-color: rgba(102, 187, 106, 0.1);
         }
         
+        .btn-paid {
+            color: var(--success);
+        }
+        
+        .btn-paid:hover {
+            background-color: rgba(102, 187, 106, 0.1);
+        }
+        
         /* Modals */
         .modal-content {
             background-color: var(--bg-card);
             color: var(--text-primary);
             border: 1px solid var(--border-color);
-            border-radius: 15px;
+            border-radius: 12px;
             overflow: hidden;
         }
         
@@ -429,32 +438,32 @@
             background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
             color: white;
             border-bottom: none;
-            padding: 15px 20px;
+            padding: 12px 16px;
         }
         
         .modal-title {
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         
         .modal-body {
-            padding: 20px;
+            padding: 16px;
         }
         
         .form-label {
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 6px;
-            font-size: 0.9rem;
+            margin-bottom: 5px;
+            font-size: 0.85rem;
         }
         
         .form-control, .form-select {
             background-color: var(--bg-secondary);
             border: 1px solid var(--border-color);
             color: var(--text-primary);
-            border-radius: 10px;
-            padding: 10px 14px;
-            font-size: 0.9rem;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 0.85rem;
             font-weight: 500;
             transition: all 0.3s ease;
         }
@@ -479,7 +488,7 @@
         .modal-footer {
             background-color: var(--bg-secondary);
             border-top: 1px solid var(--border-color);
-            padding: 15px 20px;
+            padding: 12px 16px;
         }
         
         .btn-secondary {
@@ -487,9 +496,9 @@
             border: 1px solid var(--border-color);
             color: var(--text-primary);
             font-weight: 500;
-            border-radius: 10px;
-            padding: 8px 16px;
-            font-size: 0.9rem;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 0.85rem;
             transition: all 0.3s ease;
         }
         
@@ -503,9 +512,9 @@
             border: none;
             color: white;
             font-weight: 600;
-            border-radius: 10px;
-            padding: 8px 16px;
-            font-size: 0.9rem;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 0.85rem;
             transition: all 0.3s ease;
             box-shadow: 0 3px 8px rgba(244, 143, 177, 0.3);
         }
@@ -539,8 +548,8 @@
         }
         
         .spinner {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border: 4px solid rgba(248, 187, 208, 0.1);
             border-radius: 50%;
             border-top-color: var(--accent-primary);
@@ -555,27 +564,27 @@
         .alert-limit {
             background-color: rgba(248, 187, 208, 0.2);
             border-left: 4px solid var(--danger);
-            padding: 12px;
-            border-radius: 0 12px 12px 0;
-            margin-top: 15px;
+            padding: 10px;
+            border-radius: 0 10px 10px 0;
+            margin-top: 12px;
             display: flex;
             align-items: center;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
         }
         
         .alert-limit i {
             color: var(--danger);
-            margin-right: 10px;
-            font-size: 1.1rem;
+            margin-right: 8px;
+            font-size: 1rem;
         }
         
         /* Commitment Section */
         .commitment-card {
             background: linear-gradient(135deg, var(--bg-card), #fefefe);
-            border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 15px;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 12px;
             border: 1px solid var(--border-color);
             box-shadow: 0 5px 20px var(--shadow);
         }
@@ -583,35 +592,35 @@
         .commitment-total {
             display: flex;
             justify-content: space-between;
-            margin-top: 15px;
-            padding-top: 15px;
+            margin-top: 12px;
+            padding-top: 12px;
             border-top: 1px solid var(--border-color);
         }
         
         .commitment-person {
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-primary);
         }
         
         .commitment-amount {
             font-weight: 700;
             color: var(--accent-primary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         /* Split Bill Modal */
         .split-options {
             display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
+            gap: 8px;
+            margin-bottom: 12px;
         }
         
         .split-option {
             flex: 1;
-            padding: 10px;
+            padding: 8px;
             background-color: var(--bg-secondary);
-            border-radius: 10px;
+            border-radius: 8px;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -630,16 +639,16 @@
         .form-options {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            margin-bottom: 15px;
+            gap: 8px;
+            margin-bottom: 12px;
         }
         
         .form-option {
             display: flex;
             align-items: center;
-            padding: 10px;
+            padding: 8px;
             background-color: var(--bg-secondary);
-            border-radius: 10px;
+            border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -654,24 +663,24 @@
         }
         
         .form-option input[type="radio"] {
-            margin-right: 10px;
+            margin-right: 8px;
         }
         
         .commitment-options {
             display: flex;
-            gap: 10px;
-            margin-top: 10px;
+            gap: 8px;
+            margin-top: 8px;
         }
         
         .commitment-option {
             flex: 1;
-            padding: 8px;
+            padding: 6px;
             background-color: var(--bg-secondary);
-            border-radius: 8px;
+            border-radius: 6px;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
         
         .commitment-option:hover {
@@ -683,14 +692,95 @@
             color: white;
         }
         
+        /* Month Selector */
+        .month-selector {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            background-color: var(--bg-secondary);
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .month-selector button {
+            background: none;
+            border: none;
+            color: var(--accent-primary);
+            font-size: 1rem;
+        }
+        
+        .month-selector h6 {
+            margin: 0;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        /* View Selector */
+        .view-selector {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .view-option {
+            flex: 1;
+            min-width: 70px;
+            padding: 6px;
+            background-color: var(--bg-secondary);
+            border-radius: 6px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .view-option:hover {
+            background-color: var(--bg-tertiary);
+        }
+        
+        .view-option.active {
+            background-color: var(--accent-primary);
+            color: white;
+        }
+        
+        /* Notification */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--danger);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            transform: translateX(120%);
+            transition: transform 0.3s ease;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+        }
+        
+        .notification i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .container {
-                padding: 0 10px;
+                padding: 0 8px;
             }
             
             .summary-value {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             
             .card-header {
@@ -699,45 +789,45 @@
             }
             
             .card-header .btn-add {
-                margin-top: 8px;
+                margin-top: 6px;
                 align-self: flex-end;
             }
             
             .table-responsive {
-                border-radius: 0 0 15px 15px;
-                font-size: 0.75rem;
+                border-radius: 0 0 12px 12px;
+                font-size: 0.7rem;
             }
             
             .announcement-bar {
-                font-size: 0.75rem;
-                padding: 8px 0;
+                font-size: 0.7rem;
+                padding: 6px 0;
             }
             
             .modal-body {
-                padding: 15px;
+                padding: 12px;
             }
             
             .form-label {
-                font-size: 0.85rem;
+                font-size: 0.8rem;
             }
             
             .form-control, .form-select {
-                font-size: 0.85rem;
-                padding: 8px 12px;
+                font-size: 0.8rem;
+                padding: 6px 10px;
             }
             
             .summary-item {
-                padding: 8px 5px;
+                padding: 6px 4px;
             }
             
             .commitment-total {
                 flex-direction: column;
-                gap: 8px;
+                gap: 6px;
             }
             
             .credit-card-stats {
                 flex-direction: column;
-                gap: 10px;
+                gap: 8px;
             }
             
             .credit-card-stat {
@@ -747,11 +837,21 @@
             }
             
             .credit-card-stat-value {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             
             .credit-card-stat-label {
-                font-size: 0.8rem;
+                font-size: 0.75rem;
+            }
+            
+            .view-selector {
+                gap: 4px;
+            }
+            
+            .view-option {
+                min-width: 60px;
+                padding: 5px;
+                font-size: 0.7rem;
             }
         }
     </style>
@@ -930,38 +1030,87 @@
                 </div>
             </div>
 
-            <!-- Monthly Commitment Section -->
+            <!-- My Monthly Commitment Section -->
             <div class="commitment-card">
                 <div class="card-header">
-                    <h5><i class="bi bi-person-check"></i> Monthly Commitment</h5>
+                    <h5><i class="bi bi-person-check"></i> My Monthly Commitment</h5>
                     <button class="btn btn-sm btn-add" data-bs-toggle="modal" data-bs-target="#commitmentModal">
                         <i class="bi bi-plus-circle me-1"></i> Add
                     </button>
                 </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Person</th>
-                                    <th>Description</th>
-                                    <th>Amount</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody id="commitmentTableBody">
-                                <!-- Data will be inserted here -->
-                            </tbody>
-                        </table>
+                
+                <!-- Month Selector -->
+                <div class="month-selector">
+                    <button id="prevMonth"><i class="bi bi-chevron-left"></i></button>
+                    <h6 id="currentMonth">June 2023</h6>
+                    <button id="nextMonth"><i class="bi bi-chevron-right"></i></button>
+                </div>
+                
+                <!-- View Selector -->
+                <div class="view-selector">
+                    <div class="view-option active" data-view="all">All</div>
+                    <div class="view-option" data-view="credit">Credit Card</div>
+                    <div class="view-option" data-view="bnpl">BNPL</div>
+                    <div class="view-option" data-view="outstanding">Outstanding</div>
+                    <div class="view-option" data-view="paid">Paid</div>
+                </div>
+                
+                <!-- Bella's Commitment Table -->
+                <div class="card mb-3">
+                    <div class="card-header bg-light">
+                        <h6 class="mb-0"><i class="bi bi-person-fill me-2"></i> Bella's Commitments</h6>
                     </div>
-                    <div class="commitment-total">
-                        <div>
-                            <div class="commitment-person">Bella's Total Commitment:</div>
-                            <div class="commitment-person">Danial's Total Commitment:</div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bellaCommitmentTableBody">
+                                    <!-- Data will be inserted here -->
+                                </tbody>
+                            </table>
                         </div>
-                        <div>
-                            <div class="commitment-amount" id="bellaCommitmentTotal">RM 0</div>
-                            <div class="commitment-amount" id="danialCommitmentTotal">RM 0</div>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold">Total:</span>
+                            <span class="fw-bold commitment-amount" id="bellaCommitmentTotal">RM 0</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Danial's Commitment Table -->
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h6 class="mb-0"><i class="bi bi-person-fill me-2"></i> Danial's Commitments</h6>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="danialCommitmentTableBody">
+                                    <!-- Data will be inserted here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold">Total:</span>
+                            <span class="fw-bold commitment-amount" id="danialCommitmentTotal">RM 0</span>
                         </div>
                     </div>
                 </div>
@@ -1016,8 +1165,8 @@
                             <input type="text" class="form-control" id="oneTimeAmount" inputmode="decimal" pattern="[0-9]+(\.[0-9]{1,2})?" required>
                         </div>
                         <div class="mb-3">
-                            <label for="oneTimeDate" class="form-label">Date</label>
-                            <input type="date" class="form-control" id="oneTimeDate" required>
+                            <label for="oneTimeDate" class="form-label">Date (dd-mm-yyyy)</label>
+                            <input type="text" class="form-control" id="oneTimeDate" placeholder="dd-mm-yyyy" required>
                         </div>
                         
                         <div class="mb-3">
@@ -1235,6 +1384,14 @@
                             <label for="commitmentAmount" class="form-label">Amount (RM)</label>
                             <input type="text" class="form-control" id="commitmentAmount" inputmode="decimal" pattern="[0-9]+(\.[0-9]{1,2})?" required>
                         </div>
+                        <div class="mb-3">
+                            <label for="commitmentType" class="form-label">Type</label>
+                            <select class="form-select" id="commitmentType" required>
+                                <option value="credit">Credit Card</option>
+                                <option value="bnpl">BNPL</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -1301,27 +1458,37 @@
         </div>
     </div>
 
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <i class="bi bi-exclamation-circle-fill"></i>
+        <span id="notificationText">Reminder: Outstanding payment please check pay, thanks!</span>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Data storage
         let instalments = [
-            { id: 1, person: 'BELLA', provider: 'Atome', description: 'Shopping', amount: 244.67, duration: 6 }
+            { id: 1, person: 'BELLA', provider: 'Atome', description: 'Shopping', amount: 244.67, duration: 6, startDate: '15-06-2023' }
         ];
         
         let ccInstalments = [];
         
         let oneTimePurchases = [
-            { id: 1, person: 'BELLA', merchant: 'Sushi Ya', category: 'Food', amount: 44, date: '2023-06-15' },
-            { id: 2, person: 'BELLA', merchant: '', category: 'Groceries', amount: 18, date: '2023-06-10' },
-            { id: 3, person: 'BELLA', merchant: 'Secret Recipe', category: 'Food', amount: 62.30, date: '2023-06-05' },
-            { id: 4, person: 'BELLA', merchant: 'Pizza', category: 'Food', amount: 47.25, date: '2023-06-01' },
-            { id: 5, person: 'DANIAL', merchant: 'Sushi Ya', category: 'Food', amount: 44, date: '2023-06-12' }
+            { id: 1, person: 'BELLA', merchant: 'Sushi Ya', category: 'Food', amount: 44, date: '15-06-2023' },
+            { id: 2, person: 'BELLA', merchant: '', category: 'Groceries', amount: 18, date: '10-06-2023' },
+            { id: 3, person: 'BELLA', merchant: 'Secret Recipe', category: 'Food', amount: 62.30, date: '05-06-2023' },
+            { id: 4, person: 'BELLA', merchant: 'Pizza', category: 'Food', amount: 47.25, date: '01-06-2023' },
+            { id: 5, person: 'DANIAL', merchant: 'Sushi Ya', category: 'Food', amount: 44, date: '12-06-2023' }
         ];
         
         let commitments = [
-            { id: 1, person: 'BELLA', description: 'Internet Bill', amount: 100 },
-            { id: 2, person: 'DANIAL', description: 'Phone Bill', amount: 80 }
+            { id: 1, person: 'BELLA', description: 'Internet Bill', amount: 100, type: 'credit', status: 'outstanding', month: 6, year: 2023 },
+            { id: 2, person: 'DANIAL', description: 'Phone Bill', amount: 80, type: 'credit', status: 'outstanding', month: 6, year: 2023 }
         ];
+        
+        // Current month and year for viewing
+        let currentMonth = 6; // June
+        let currentYear = 2023;
         
         // Login functionality
         document.getElementById('loginForm').addEventListener('submit', function(e) {
@@ -1333,16 +1500,31 @@
                 setTimeout(() => {
                     document.getElementById('loginScreen').style.display = 'none';
                     document.getElementById('mainApp').style.display = 'flex';
+                    // Save login state to localStorage
+                    localStorage.setItem('isLoggedIn', 'true');
                     hideLoading();
                     renderTables();
+                    checkForOutstandingPayments();
                 }, 1500);
             } else {
                 alert('Incorrect password. Please try again.');
             }
         });
         
-        // Set today's date as default for one-time purchase
-        document.getElementById('oneTimeDate').valueAsDate = new Date();
+        // Check if user is already logged in
+        window.addEventListener('load', function() {
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                document.getElementById('loginScreen').style.display = 'none';
+                document.getElementById('mainApp').style.display = 'flex';
+                renderTables();
+                checkForOutstandingPayments();
+            }
+        });
+        
+        // Set today's date as default for one-time purchase (dd-mm-yyyy)
+        const today = new Date();
+        const formattedDate = `${String(today.getDate()).padStart(2, '0')}-${String(today.getMonth() + 1).padStart(2, '0')}-${today.getFullYear()}`;
+        document.getElementById('oneTimeDate').value = formattedDate;
         
         // BNPL provider icons
         const providerIcons = {
@@ -1381,15 +1563,40 @@
             return parseFloat(parts.join('.')) || 0;
         }
         
+        // Format date from dd-mm-yyyy to Date object
+        function parseDate(dateString) {
+            const parts = dateString.split('-');
+            if (parts.length === 3) {
+                return new Date(parts[2], parts[1] - 1, parts[0]);
+            }
+            return new Date();
+        }
+        
+        // Format date from Date object to dd-mm-yyyy
+        function formatDate(date) {
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const year = date.getFullYear();
+            return `${day}-${month}-${year}`;
+        }
+        
+        // Format month and year for display
+        function formatMonthYear(month, year) {
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"];
+            return `${monthNames[month - 1]} ${year}`;
+        }
+        
         // Render tables
         function renderTables() {
             renderOneTimeTable();
             renderInstalmentTable();
             renderCCInstalmentTable();
-            renderCommitmentTable();
+            renderCommitmentTables();
             updateSummary();
             updateCreditCardUsage();
             updateCommitmentTotals();
+            updateMonthDisplay();
         }
         
         function renderOneTimeTable() {
@@ -1406,7 +1613,7 @@
                     <td>${purchase.merchant}</td>
                     <td>${purchase.category}</td>
                     <td>RM ${purchase.amount.toFixed(2)}</td>
-                    <td>${formatDate(purchase.date)}</td>
+                    <td>${purchase.date}</td>
                     <td>
                         <button class="btn btn-sm btn-edit" onclick="editOneTime(${purchase.id})">
                             <i class="bi bi-pencil"></i>
@@ -1489,23 +1696,53 @@
             });
         }
         
-        function renderCommitmentTable() {
-            const tbody = document.getElementById('commitmentTableBody');
+        function renderCommitmentTables() {
+            renderBellaCommitmentTable();
+            renderDanialCommitmentTable();
+        }
+        
+        function renderBellaCommitmentTable() {
+            const tbody = document.getElementById('bellaCommitmentTableBody');
             tbody.innerHTML = '';
             
-            commitments.forEach(commitment => {
+            // Get current view
+            const activeView = document.querySelector('.view-option.active').dataset.view;
+            
+            // Filter commitments for Bella
+            let bellaCommitments = commitments.filter(c => c.person === 'BELLA' && c.month === currentMonth && c.year === currentYear);
+            
+            // Apply view filter
+            if (activeView !== 'all') {
+                if (activeView === 'credit') {
+                    bellaCommitments = bellaCommitments.filter(c => c.type === 'credit');
+                } else if (activeView === 'bnpl') {
+                    bellaCommitments = bellaCommitments.filter(c => c.type === 'bnpl');
+                } else if (activeView === 'outstanding') {
+                    bellaCommitments = bellaCommitments.filter(c => c.status === 'outstanding');
+                } else if (activeView === 'paid') {
+                    bellaCommitments = bellaCommitments.filter(c => c.status === 'paid');
+                }
+            }
+            
+            bellaCommitments.forEach(commitment => {
                 const row = document.createElement('tr');
                 
-                const personClass = commitment.person.toLowerCase() === 'bella' ? 'bella-badge' : 'danial-badge';
+                const statusClass = commitment.status === 'paid' ? 'text-success' : 'text-warning';
+                const statusText = commitment.status === 'paid' ? 'Paid' : 'Outstanding';
                 
                 row.innerHTML = `
-                    <td><span class="person-badge ${personClass}">${commitment.person}</span></td>
                     <td>${commitment.description}</td>
                     <td>RM ${commitment.amount.toFixed(2)}</td>
+                    <td class="${statusClass}">${statusText}</td>
                     <td>
-                        <button class="btn btn-sm btn-edit" onclick="editCommitment(${commitment.id})">
-                            <i class="bi bi-pencil"></i>
-                        </button>
+                        ${commitment.status === 'outstanding' ? 
+                            `<button class="btn btn-sm btn-paid" onclick="markAsPaid(${commitment.id})">
+                                <i class="bi bi-check-circle"></i> Mark as Paid
+                            </button>` : 
+                            `<button class="btn btn-sm btn-edit" onclick="editCommitment(${commitment.id})">
+                                <i class="bi bi-pencil"></i>
+                            </button>`
+                        }
                         <button class="btn btn-sm btn-delete" onclick="deleteCommitment(${commitment.id})">
                             <i class="bi bi-trash"></i>
                         </button>
@@ -1516,9 +1753,56 @@
             });
         }
         
-        function formatDate(dateString) {
-            const options = { year: 'numeric', month: 'short', day: 'numeric' };
-            return new Date(dateString).toLocaleDateString(undefined, options);
+        function renderDanialCommitmentTable() {
+            const tbody = document.getElementById('danialCommitmentTableBody');
+            tbody.innerHTML = '';
+            
+            // Get current view
+            const activeView = document.querySelector('.view-option.active').dataset.view;
+            
+            // Filter commitments for Danial
+            let danialCommitments = commitments.filter(c => c.person === 'DANIAL' && c.month === currentMonth && c.year === currentYear);
+            
+            // Apply view filter
+            if (activeView !== 'all') {
+                if (activeView === 'credit') {
+                    danialCommitments = danialCommitments.filter(c => c.type === 'credit');
+                } else if (activeView === 'bnpl') {
+                    danialCommitments = danialCommitments.filter(c => c.type === 'bnpl');
+                } else if (activeView === 'outstanding') {
+                    danialCommitments = danialCommitments.filter(c => c.status === 'outstanding');
+                } else if (activeView === 'paid') {
+                    danialCommitments = danialCommitments.filter(c => c.status === 'paid');
+                }
+            }
+            
+            danialCommitments.forEach(commitment => {
+                const row = document.createElement('tr');
+                
+                const statusClass = commitment.status === 'paid' ? 'text-success' : 'text-warning';
+                const statusText = commitment.status === 'paid' ? 'Paid' : 'Outstanding';
+                
+                row.innerHTML = `
+                    <td>${commitment.description}</td>
+                    <td>RM ${commitment.amount.toFixed(2)}</td>
+                    <td class="${statusClass}">${statusText}</td>
+                    <td>
+                        ${commitment.status === 'outstanding' ? 
+                            `<button class="btn btn-sm btn-paid" onclick="markAsPaid(${commitment.id})">
+                                <i class="bi bi-check-circle"></i> Mark as Paid
+                            </button>` : 
+                            `<button class="btn btn-sm btn-edit" onclick="editCommitment(${commitment.id})">
+                                <i class="bi bi-pencil"></i>
+                            </button>`
+                        }
+                        <button class="btn btn-sm btn-delete" onclick="deleteCommitment(${commitment.id})">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
+                `;
+                
+                tbody.appendChild(row);
+            });
         }
         
         function updateSummary() {
@@ -1615,15 +1899,19 @@
         
         function updateCommitmentTotals() {
             const bellaTotal = commitments
-                .filter(c => c.person === 'BELLA')
+                .filter(c => c.person === 'BELLA' && c.month === currentMonth && c.year === currentYear)
                 .reduce((sum, commitment) => sum + commitment.amount, 0);
                 
             const danialTotal = commitments
-                .filter(c => c.person === 'DANIAL')
+                .filter(c => c.person === 'DANIAL' && c.month === currentMonth && c.year === currentYear)
                 .reduce((sum, commitment) => sum + commitment.amount, 0);
             
             document.getElementById('bellaCommitmentTotal').textContent = `RM ${bellaTotal.toFixed(2)}`;
             document.getElementById('danialCommitmentTotal').textContent = `RM ${danialTotal.toFixed(2)}`;
+        }
+        
+        function updateMonthDisplay() {
+            document.getElementById('currentMonth').textContent = formatMonthYear(currentMonth, currentYear);
         }
         
         // Payment options functionality
@@ -1694,6 +1982,41 @@
             document.getElementById('danialAmount').value = danialAmount.toFixed(2);
         });
         
+        // Month navigation
+        document.getElementById('prevMonth').addEventListener('click', function() {
+            if (currentMonth === 1) {
+                currentMonth = 12;
+                currentYear--;
+            } else {
+                currentMonth--;
+            }
+            renderCommitmentTables();
+            updateCommitmentTotals();
+            updateMonthDisplay();
+        });
+        
+        document.getElementById('nextMonth').addEventListener('click', function() {
+            if (currentMonth === 12) {
+                currentMonth = 1;
+                currentYear++;
+            } else {
+                currentMonth++;
+            }
+            renderCommitmentTables();
+            updateCommitmentTotals();
+            updateMonthDisplay();
+        });
+        
+        // View selector functionality
+        document.querySelectorAll('.view-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.view-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                
+                renderCommitmentTables();
+            });
+        });
+        
         // Open split modal
         function openSplitModal(type, id) {
             let item;
@@ -1733,7 +2056,11 @@
                         id: commitments.length > 0 ? Math.max(...commitments.map(c => c.id)) + 1 : 1,
                         person: 'BELLA',
                         description: 'Shared Expense',
-                        amount: bellaAmount
+                        amount: bellaAmount,
+                        type: 'other',
+                        status: 'outstanding',
+                        month: currentMonth,
+                        year: currentYear
                     };
                     commitments.push(bellaCommitment);
                     
@@ -1742,7 +2069,11 @@
                         id: commitments.length > 0 ? Math.max(...commitments.map(c => c.id)) + 1 : 1,
                         person: 'DANIAL',
                         description: 'Shared Expense',
-                        amount: danialAmount
+                        amount: danialAmount,
+                        type: 'other',
+                        status: 'outstanding',
+                        month: currentMonth,
+                        year: currentYear
                     };
                     commitments.push(danialCommitment);
                 }
@@ -1817,7 +2148,11 @@
                                     id: commitments.length > 0 ? Math.max(...commitments.map(c => c.id)) + 1 : 1,
                                     person: 'BELLA',
                                     description: merchant,
-                                    amount: paymentOption === 'split' ? splitAmount : amount
+                                    amount: paymentOption === 'split' ? splitAmount : amount,
+                                    type: 'other',
+                                    status: 'outstanding',
+                                    month: currentMonth,
+                                    year: currentYear
                                 });
                             }
                             
@@ -1826,7 +2161,11 @@
                                     id: commitments.length > 0 ? Math.max(...commitments.map(c => c.id)) + 1 : 1,
                                     person: 'DANIAL',
                                     description: merchant,
-                                    amount: paymentOption === 'split' ? splitAmount : amount
+                                    amount: paymentOption === 'split' ? splitAmount : amount,
+                                    type: 'other',
+                                    status: 'outstanding',
+                                    month: currentMonth,
+                                    year: currentYear
                                 });
                             }
                         }
@@ -1846,7 +2185,7 @@
                     form.reset();
                     document.getElementById('oneTimeId').value = "0";
                     document.getElementById('splitAmountSection').style.display = 'none';
-                    document.getElementById('oneTimeDate').valueAsDate = new Date();
+                    document.getElementById('oneTimeDate').value = formattedDate;
                     
                     // Reset options
                     document.querySelector('.form-option[data-option="non-split"]').classList.add('active');
@@ -1877,7 +2216,8 @@
                         provider: document.getElementById('instalmentProvider').value,
                         description: capitalizeFirstLetter(document.getElementById('instalmentDescription').value),
                         amount: formatAmount(document.getElementById('instalmentAmount').value),
-                        duration: parseInt(document.getElementById('instalmentDuration').value)
+                        duration: parseInt(document.getElementById('instalmentDuration').value),
+                        startDate: document.getElementById('oneTimeDate').value
                     };
                     
                     // Get commitment option
@@ -1897,7 +2237,11 @@
                                     id: commitments.length > 0 ? Math.max(...commitments.map(c => c.id)) + 1 : 1,
                                     person: 'BELLA',
                                     description: instalmentData.description,
-                                    amount: monthlyAmount
+                                    amount: monthlyAmount,
+                                    type: 'bnpl',
+                                    status: 'outstanding',
+                                    month: currentMonth,
+                                    year: currentYear
                                 });
                             }
                             
@@ -1906,7 +2250,11 @@
                                     id: commitments.length > 0 ? Math.max(...commitments.map(c => c.id)) + 1 : 1,
                                     person: 'DANIAL',
                                     description: instalmentData.description,
-                                    amount: monthlyAmount
+                                    amount: monthlyAmount,
+                                    type: 'bnpl',
+                                    status: 'outstanding',
+                                    month: currentMonth,
+                                    year: currentYear
                                 });
                             }
                         }
@@ -1952,7 +2300,8 @@
                         person: document.getElementById('ccInstalmentPerson').value,
                         description: capitalizeFirstLetter(document.getElementById('ccInstalmentDescription').value),
                         amount: formatAmount(document.getElementById('ccInstalmentAmount').value),
-                        duration: parseInt(document.getElementById('ccInstalmentDuration').value)
+                        duration: parseInt(document.getElementById('ccInstalmentDuration').value),
+                        startDate: document.getElementById('oneTimeDate').value
                     };
                     
                     // Get commitment option
@@ -1972,7 +2321,11 @@
                                     id: commitments.length > 0 ? Math.max(...commitments.map(c => c.id)) + 1 : 1,
                                     person: 'BELLA',
                                     description: instalmentData.description,
-                                    amount: monthlyAmount
+                                    amount: monthlyAmount,
+                                    type: 'credit',
+                                    status: 'outstanding',
+                                    month: currentMonth,
+                                    year: currentYear
                                 });
                             }
                             
@@ -1981,7 +2334,11 @@
                                     id: commitments.length > 0 ? Math.max(...commitments.map(c => c.id)) + 1 : 1,
                                     person: 'DANIAL',
                                     description: instalmentData.description,
-                                    amount: monthlyAmount
+                                    amount: monthlyAmount,
+                                    type: 'credit',
+                                    status: 'outstanding',
+                                    month: currentMonth,
+                                    year: currentYear
                                 });
                             }
                         }
@@ -2026,7 +2383,11 @@
                     const commitmentData = {
                         person: document.getElementById('commitmentPerson').value,
                         description: capitalizeFirstLetter(document.getElementById('commitmentDescription').value),
-                        amount: formatAmount(document.getElementById('commitmentAmount').value)
+                        amount: formatAmount(document.getElementById('commitmentAmount').value),
+                        type: document.getElementById('commitmentType').value,
+                        status: 'outstanding',
+                        month: currentMonth,
+                        year: currentYear
                     };
                     
                     if (commitmentId === 0) {
@@ -2055,6 +2416,22 @@
                 form.reportValidity();
             }
         });
+        
+        // Mark commitment as paid
+        function markAsPaid(id) {
+            showLoading();
+            
+            setTimeout(() => {
+                const index = commitments.findIndex(c => c.id === id);
+                if (index !== -1) {
+                    commitments[index].status = 'paid';
+                    renderCommitmentTables();
+                    updateCommitmentTotals();
+                }
+                
+                hideLoading();
+            }, 500);
+        }
         
         // Edit functions
         function editOneTime(id) {
@@ -2108,6 +2485,7 @@
                 document.getElementById('commitmentPerson').value = commitment.person;
                 document.getElementById('commitmentDescription').value = commitment.description;
                 document.getElementById('commitmentAmount').value = commitment.amount;
+                document.getElementById('commitmentType').value = commitment.type;
                 
                 const modal = new bootstrap.Modal(document.getElementById('commitmentModal'));
                 modal.show();
@@ -2187,6 +2565,26 @@
                 }
             });
         });
+        
+        // Check for outstanding payments and show notification
+        function checkForOutstandingPayments() {
+            const outstandingPayments = commitments.filter(c => c.status === 'outstanding' && c.month === currentMonth && c.year === currentYear);
+            
+            if (outstandingPayments.length > 0) {
+                showNotification();
+            }
+        }
+        
+        // Show notification
+        function showNotification() {
+            const notification = document.getElementById('notification');
+            notification.classList.add('show');
+            
+            // Hide notification after 5 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 5000);
+        }
     </script>
 </body>
 </html>
