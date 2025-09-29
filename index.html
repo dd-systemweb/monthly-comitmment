@@ -633,10 +633,29 @@
             
             function formatMonth(monthString) {
                 if (!monthString) return '';
-                const [year, month] = monthString.split('-');
+                
+                // Handle both string and Date object cases
+                let year, month;
+                
+                if (typeof monthString === 'string') {
+                    [year, month] = monthString.split('-');
+                } else if (monthString instanceof Date) {
+                    year = monthString.getFullYear();
+                    month = String(monthString.getMonth() + 1).padStart(2, '0');
+                } else {
+                    return 'Invalid Date';
+                }
+                
                 const monthNames = ["January", "February", "March", "April", "May", "June",
                     "July", "August", "September", "October", "November", "December"];
-                return `${monthNames[parseInt(month) - 1]} ${year}`;
+                
+                // Ensure month is a valid number
+                const monthIndex = parseInt(month) - 1;
+                if (isNaN(monthIndex) || monthIndex < 0 || monthIndex > 11) {
+                    return 'Invalid Month';
+                }
+                
+                return `${monthNames[monthIndex]} ${year}`;
             }
             
             // API functions
