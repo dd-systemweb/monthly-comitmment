@@ -607,6 +607,38 @@
             // Google Sheets API configuration
             const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbxrP0vHnVW9aL6GQx2pXKwKfOqTppRiBRtshNb2qsktn-yIZkVcMTiriSw5qlOZJVrPwA/exec';
             
+            // Helper functions for date handling
+            function getLocalDateString() {
+                const now = new Date();
+                const year = now.getFullYear();
+                const month = String(now.getMonth() + 1).padStart(2, '0');
+                const day = String(now.getDate()).padStart(2, '0');
+                return `${year}-${month}-${day}`;
+            }
+            
+            function getLocalMonthString() {
+                const now = new Date();
+                const year = now.getFullYear();
+                const month = String(now.getMonth() + 1).padStart(2, '0');
+                return `${year}-${month}`;
+            }
+            
+            function formatDate(dateString) {
+                if (!dateString) return '';
+                // Handle both YYYY-MM-DD and YYYY-MM-DDTHH:MM:SS formats
+                const datePart = dateString.split('T')[0];
+                const [year, month, day] = datePart.split('-');
+                return `${day}/${month}/${year}`;
+            }
+            
+            function formatMonth(monthString) {
+                if (!monthString) return '';
+                const [year, month] = monthString.split('-');
+                const monthNames = ["January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December"];
+                return `${monthNames[parseInt(month) - 1]} ${year}`;
+            }
+            
             // API functions
             async function fetchExpenses() {
                 try {
@@ -849,16 +881,13 @@
                 const editDanialAmount = document.getElementById('editDanialAmount');
                 const editBellaAmount = document.getElementById('editBellaAmount');
                 
-                // Set today's date as default
-                const today = new Date().toISOString().slice(0, 10);
-                document.getElementById('expenseDate').value = today;
+                // Set today's date as default using local date
+                document.getElementById('expenseDate').value = getLocalDateString();
                 
-                // Set current month as default
-                const currentDate = new Date();
-                const currentMonth = currentDate.toISOString().slice(0, 7);
-                document.getElementById('commitmentMonth').value = currentMonth;
-                document.getElementById('commitmentMonthSelect').value = currentMonth;
-                document.getElementById('filterMonth').value = currentMonth;
+                // Set current month as default using local month
+                document.getElementById('commitmentMonth').value = getLocalMonthString();
+                document.getElementById('commitmentMonthSelect').value = getLocalMonthString();
+                document.getElementById('filterMonth').value = getLocalMonthString();
                 
                 // Add expense category change handler
                 expenseCategory.addEventListener('change', function() {
@@ -1103,7 +1132,7 @@
                             
                             // Reset form and close modal
                             document.getElementById('expenseForm').reset();
-                            document.getElementById('expenseDate').value = today;
+                            document.getElementById('expenseDate').value = getLocalDateString();
                             paymentMethodDiv.style.display = 'none';
                             installmentDiv.style.display = 'none';
                             splitAmountDiv.style.display = 'none';
@@ -1334,7 +1363,7 @@
                                         data-id="${expense.id}" ${expense.completed ? 'checked' : ''}>
                                 </div>
                             </td>
-                            <td>${new Date(expense.date).toLocaleDateString()}</td>
+                            <td>${formatDate(expense.date)}</td>
                             <td>${expense.description}</td>
                             <td>${expense.category}</td>
                             <td>${paymentDetails}</td>
@@ -1448,7 +1477,7 @@
                                                 data-id="${commitment.id}" ${commitment.completed ? 'checked' : ''}>
                                         </div>
                                     </td>
-                                    <td>${new Date(commitment.month + '-01').toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}</td>
+                                    <td>${formatMonth(commitment.month)}</td>
                                     <td>${commitment.description}</td>
                                     <td>RM${commitment.amount.toFixed(2)}</td>
                                     <td>
@@ -1501,7 +1530,7 @@
                                                 data-id="${commitment.id}" ${commitment.completed ? 'checked' : ''}>
                                         </div>
                                     </td>
-                                    <td>${new Date(commitment.month + '-01').toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}</td>
+                                    <td>${formatMonth(commitment.month)}</td>
                                     <td>${commitment.description}</td>
                                     <td>RM${commitment.amount.toFixed(2)}</td>
                                     <td>
