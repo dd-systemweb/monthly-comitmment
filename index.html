@@ -605,7 +605,7 @@
             }
             
             // Google Sheets API configuration
-            const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbx5Mt3VoOzVy3Pi1ZsW36zYYWpV-LOHTCeWQRxNFZzgqDKGMfLjIhPKWCr7Qgzzr-2s6g/exec';
+            const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbxrP0vHnVW9aL6GQx2pXKwKfOqTppRiBRtshNb2qsktn-yIZkVcMTiriSw5qlOZJVrPwA/exec';
             
             // API functions
             async function fetchExpenses() {
@@ -634,13 +634,16 @@
             
             async function addExpense(expense) {
                 try {
-                    const formData = new FormData();
+                    const formData = new URLSearchParams();
                     formData.append('action', 'addExpense');
                     formData.append('data', JSON.stringify(expense));
                     
                     const response = await fetch(API_BASE_URL, {
                         method: 'POST',
-                        body: formData
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: formData.toString()
                     });
                     
                     if (!response.ok) throw new Error('Failed to add expense');
@@ -654,14 +657,17 @@
             
             async function updateExpense(id, expense) {
                 try {
-                    const formData = new FormData();
+                    const formData = new URLSearchParams();
                     formData.append('action', 'updateExpense');
                     formData.append('id', id);
                     formData.append('data', JSON.stringify(expense));
                     
                     const response = await fetch(API_BASE_URL, {
                         method: 'POST',
-                        body: formData
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: formData.toString()
                     });
                     
                     if (!response.ok) throw new Error('Failed to update expense');
@@ -675,13 +681,16 @@
             
             async function deleteExpense(id) {
                 try {
-                    const formData = new FormData();
+                    const formData = new URLSearchParams();
                     formData.append('action', 'deleteExpense');
                     formData.append('id', id);
                     
                     const response = await fetch(API_BASE_URL, {
                         method: 'POST',
-                        body: formData
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: formData.toString()
                     });
                     
                     if (!response.ok) throw new Error('Failed to delete expense');
@@ -695,13 +704,16 @@
             
             async function addCommitment(commitment) {
                 try {
-                    const formData = new FormData();
+                    const formData = new URLSearchParams();
                     formData.append('action', 'addCommitment');
                     formData.append('data', JSON.stringify(commitment));
                     
                     const response = await fetch(API_BASE_URL, {
                         method: 'POST',
-                        body: formData
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: formData.toString()
                     });
                     
                     if (!response.ok) throw new Error('Failed to add commitment');
@@ -715,14 +727,17 @@
             
             async function updateCommitment(id, commitment) {
                 try {
-                    const formData = new FormData();
+                    const formData = new URLSearchParams();
                     formData.append('action', 'updateCommitment');
                     formData.append('id', id);
                     formData.append('data', JSON.stringify(commitment));
                     
                     const response = await fetch(API_BASE_URL, {
                         method: 'POST',
-                        body: formData
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: formData.toString()
                     });
                     
                     if (!response.ok) throw new Error('Failed to update commitment');
@@ -736,13 +751,16 @@
             
             async function deleteCommitment(id) {
                 try {
-                    const formData = new FormData();
+                    const formData = new URLSearchParams();
                     formData.append('action', 'deleteCommitment');
                     formData.append('id', id);
                     
                     const response = await fetch(API_BASE_URL, {
                         method: 'POST',
-                        body: formData
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: formData.toString()
                     });
                     
                     if (!response.ok) throw new Error('Failed to delete commitment');
